@@ -1,0 +1,406 @@
+INFO 2025-07-25 09:27:26,227 autoreload 22520 140704319972544 Watching for file changes with StatReloader
+WARNING 2025-07-25 09:40:28,974 log 22520 123145406177280 Not Found: /
+WARNING 2025-07-25 09:40:29,233 log 22520 123145406177280 Not Found: /favicon.ico
+INFO 2025-07-26 00:54:08,480 autoreload 9348 140704308159680 Watching for file changes with StatReloader
+WARNING 2025-07-26 00:54:32,680 log 9348 123145598058496 Not Found: /favicon.ico
+WARNING 2025-07-26 01:00:03,823 log 9348 123145598058496 Not Found: /api/users/register/
+WARNING 2025-07-26 01:00:33,493 log 9348 123145598058496 Not Found: /api/users/register/
+WARNING 2025-07-26 01:03:39,167 log 9348 123145598058496 Not Found: /api/users/register/
+INFO 2025-07-26 01:03:50,145 autoreload 9348 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/api/urls.py changed, reloading.
+INFO 2025-07-26 01:03:51,160 autoreload 10593 140704308159680 Watching for file changes with StatReloader
+ERROR 2025-07-26 01:03:55,151 log 10593 123145380458496 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+INFO 2025-07-26 01:04:04,009 autoreload 11072 140704308159680 Watching for file changes with StatReloader
+ERROR 2025-07-26 01:04:10,030 log 10593 123145379921920 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:04:18,588 log 10593 123145379921920 Not Found: /api/auth/
+ERROR 2025-07-26 01:04:23,799 log 10593 123145379921920 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:04:28,800 log 10593 123145379921920 Not Found: /api/users/
+INFO 2025-07-26 01:04:42,044 autoreload 12225 140704308159680 Watching for file changes with StatReloader
+ERROR 2025-07-26 01:04:56,248 log 12225 123145399439360 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:05:05,317 log 12225 123145399439360 Method Not Allowed: /api/users/register/
+ERROR 2025-07-26 01:05:15,109 log 12225 123145399439360 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:05:34,167 log 12225 123145399439360 Not Found: /api/
+WARNING 2025-07-26 01:06:00,819 log 12225 123145416228864 Bad Request: /api/users/register/
+ERROR 2025-07-26 01:06:25,678 log 12225 123145399439360 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:06:51,904 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:06:52,780 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:06:53,084 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:06:53,277 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:06:53,507 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:07:09,472 log 12225 123145399439360 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:09:06,858 log 12225 123145416228864 Not Found: /logo192.png
+WARNING 2025-07-26 01:09:06,898 log 12225 123145416228864 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-07-26 01:09:06,915 log 12225 123145416228864 Not Found: /apple-touch-icon.png
+WARNING 2025-07-26 01:09:14,746 log 12225 123145516965888 Not Found: /apple-touch-icon-precomposed.png
+WARNING 2025-07-26 01:09:14,755 log 12225 123145516965888 Not Found: /apple-touch-icon.png
+ERROR 2025-07-26 01:10:31,589 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+ERROR 2025-07-26 01:10:32,974 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+ERROR 2025-07-26 01:10:33,505 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+ERROR 2025-07-26 01:10:34,014 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+ERROR 2025-07-26 01:10:34,519 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+WARNING 2025-07-26 01:10:41,260 log 12225 123145416228864 Bad Request: /api/users/register/
+WARNING 2025-07-26 01:10:47,195 log 12225 123145416228864 Bad Request: /api/users/register/
+ERROR 2025-07-26 01:11:24,029 log 12225 123145416228864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 34, in post
+    user = serializer.save()
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/serializers.py", line 34, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: create_user() missing 1 required positional argument: 'username'
+INFO 2025-07-26 01:12:38,697 autoreload 12225 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/apps/users/models.py changed, reloading.
+INFO 2025-07-26 01:12:39,573 autoreload 13320 140704308159680 Watching for file changes with StatReloader
+INFO 2025-07-26 01:12:56,900 autoreload 13320 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/apps/users/admin.py changed, reloading.
+INFO 2025-07-26 01:12:57,863 autoreload 13465 140704308159680 Watching for file changes with StatReloader
+INFO 2025-07-26 01:13:19,618 autoreload 13465 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/apps/users/models.py changed, reloading.
+INFO 2025-07-26 01:13:20,463 autoreload 13653 140704308159680 Watching for file changes with StatReloader
+INFO 2025-07-26 01:13:25,250 autoreload 13653 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/apps/users/migrations/0002_alter_user_options_alter_user_managers_and_more.py changed, reloading.
+INFO 2025-07-26 01:13:26,369 autoreload 13870 140704308159680 Watching for file changes with StatReloader
+INFO 2025-07-26 01:13:46,855 autoreload 14627 140704308159680 Watching for file changes with StatReloader
+ERROR 2025-07-26 01:13:52,035 log 14627 123145544253440 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 37, in post
+    self.send_verification_email(user)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 54, in send_verification_email
+    {settings.FRONTEND_URL}/verify-email?token={user.email_verification_token}
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'FRONTEND_URL'
+ERROR 2025-07-26 01:13:58,240 log 14627 123145543716864 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 37, in post
+    self.send_verification_email(user)
+  File "/Users/ak/Documents/CodeInJuly2025/backend/apps/users/views.py", line 54, in send_verification_email
+    {settings.FRONTEND_URL}/verify-email?token={user.email_verification_token}
+  File "/Users/ak/Documents/CodeInJuly2025/backend/venv/lib/python3.9/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'FRONTEND_URL'
+INFO 2025-07-26 01:14:11,929 autoreload 14627 140704308159680 /Users/ak/Documents/CodeInJuly2025/backend/job_tracker/settings.py changed, reloading.
+INFO 2025-07-26 01:14:12,822 autoreload 15302 140704308159680 Watching for file changes with StatReloader
+INFO 2025-07-26 01:14:34,273 autoreload 16345 140704308159680 Watching for file changes with StatReloader
+WARNING 2025-07-26 01:15:51,711 log 16345 123145447456768 Unauthorized: /api/jobs/applications/
+WARNING 2025-07-26 01:15:51,715 log 16345 123145464246272 Unauthorized: /api/jobs/applications/statistics/
+WARNING 2025-07-26 01:15:51,717 log 16345 123145481035776 Unauthorized: /api/jobs/applications/timeline/
+WARNING 2025-07-26 01:17:40,476 log 16345 123145447456768 Unauthorized: /api/jobs/applications/
+WARNING 2025-07-26 01:17:44,966 log 16345 123145447456768 Unauthorized: /api/jobs/applications/
+WARNING 2025-07-26 01:17:49,017 log 16345 123145447456768 Unauthorized: /api/jobs/applications/
+WARNING 2025-07-26 01:17:59,727 log 16345 123145447456768 Unauthorized: /api/jobs/applications/
+WARNING 2025-07-26 01:20:08,220 log 16345 123145497825280 Bad Request: /api/jobs/applications/
+INFO 2025-08-27 03:33:07,887 autoreload 1842 140704613147840 Watching for file changes with StatReloader
+WARNING 2025-08-27 03:49:08,499 log 1842 123145540112384 Unauthorized: /api/jobs/applications/statistics/
+WARNING 2025-08-27 03:49:08,500 log 1842 123145556901888 Unauthorized: /api/jobs/applications/timeline/
+WARNING 2025-08-27 03:49:08,502 log 1842 123145573691392 Unauthorized: /api/jobs/applications/
+INFO 2025-09-10 17:26:44,217 autoreload 14631 140704620856512 Watching for file changes with StatReloader
+WARNING 2025-09-10 17:26:54,281 log 14631 123145427189760 Not Found: /
