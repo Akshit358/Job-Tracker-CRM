@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../services/api';
 import toast from 'react-hot-toast';
 
 const ResetPasswordPage = () => {
@@ -19,10 +19,11 @@ const ResetPasswordPage = () => {
     setError('');
     setSuccess('');
     try {
-      await axios.post('/api/users/reset-password/', { email });
+      await api.post('/users/reset-password/', { email });
       setSuccess('Password reset email sent! Check your inbox.');
       toast.success('Reset email sent!');
     } catch (err) {
+      console.error('Reset password error:', err.response?.data);
       setError('Failed to send reset email.');
       toast.error('Failed to send reset email.');
     }
@@ -37,11 +38,12 @@ const ResetPasswordPage = () => {
       return;
     }
     try {
-      await axios.post('/api/users/reset-password/confirm/', { token, new_password: password, new_password_confirm: passwordConfirm });
+      await api.post('/users/reset-password/confirm/', { token, new_password: password, new_password_confirm: passwordConfirm });
       setSuccess('Password reset! You can now log in.');
       toast.success('Password reset!');
       setTimeout(() => navigate('/login'), 2000);
     } catch (err) {
+      console.error('Reset password confirm error:', err.response?.data);
       setError('Failed to reset password.');
       toast.error('Failed to reset password.');
     }
@@ -101,4 +103,4 @@ const ResetPasswordPage = () => {
   );
 };
 
-export default ResetPasswordPage; 
+export default ResetPasswordPage;

@@ -8,9 +8,15 @@ const api = axios.create({
 // Add request interceptor to include auth token
 api.interceptors.request.use(
   config => {
-    const token = localStorage.getItem('access');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
+    // Don't add auth token for registration and login endpoints
+    const authEndpoints = ['/users/register/', '/auth/login/', '/auth/token/', '/users/verify-email/'];
+    const isAuthEndpoint = authEndpoints.some(endpoint => config.url?.includes(endpoint));
+    
+    if (!isAuthEndpoint) {
+      const token = localStorage.getItem('access');
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
     }
     return config;
   },
@@ -29,4 +35,4 @@ api.interceptors.response.use(
   }
 );
 
-export default api; 
+export default api;
