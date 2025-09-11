@@ -2,6 +2,20 @@
 
 A comprehensive full-stack web application for tracking job applications with role-based authentication, email integration, and analytics.
 
+<img width="2048" height="1152" alt="1" src="https://github.com/user-attachments/assets/69d98ddf-f916-43cd-8db8-9ac229d69283" />
+
+<img width="2048" height="1152" alt="2" src="https://github.com/user-attachments/assets/fe97af42-49f9-427a-8e42-94bb849181c9" />
+
+
+<img width="2048" height="1152" alt="3" src="https://github.com/user-attachments/assets/dd3801fb-229d-4110-b173-7a4d54b99c60" />
+
+
+<img width="2048" height="1152" alt="4" src="https://github.com/user-attachments/assets/f1a028e9-97ff-43d8-b474-97ca478cbc89" />
+
+<img width="2048" height="1152" alt="5" src="https://github.com/user-attachments/assets/276d9525-021a-4165-aa27-a13b9b5639b8" />
+
+
+
 ## 🚀 Features
 
 ### 🔐 Authentication & User Management
